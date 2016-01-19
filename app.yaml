@@ -1,0 +1,14 @@
+application: <YOUR_OWN_APP_ID>
+version: <YOUR_OWN_VERSION>
+
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+  - url: /.*
+    script: main.app
+
+env_variables:
+  FOO: 'my FOO'
+  BAR: 'my BAR'
